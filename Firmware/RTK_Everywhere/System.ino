@@ -364,10 +364,11 @@ void printReports()
                 char modifiedHpa[20];
                 const char *hpaUnits =
                     getHpaUnits(hpa, modifiedHpa, sizeof(modifiedHpa), 3, true); // Returns string of the HPA units
-
+                
                 // systemPrintf("Rover Accuracy (%s): %s, SIV: %d GNSS State: ", hpaUnits, modifiedHpa,
                 //              gnssGetSatellitesInView());
                 systemPrintf("Good Morning Alec, I hope you are having a great vacation");
+
 
                 if (gnssIsRTKFix() == true)
                     systemPrint("RTK Fix");
